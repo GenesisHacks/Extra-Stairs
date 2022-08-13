@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "extrastairs",
+  "version": "${version}",
+
+  "name": "Extra Stairs",
+  "description": "Adds some extra vanilla style stairs",
+  "authors": [
+    "Genesis"
+  ],
+  "contact": {
+    "homepage": "genesishacks.github.io"
+  },
+
+  "license": "MIT",
+  "icon": "assets/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.genesis.extrastairs.ExtraStairs"
+    ],
+    "client": [
+      "net.genesis.extrastairs.ExtraStairsClient"
+    ]
+  },
+  "mixins": [
+    "extrastairs.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.6",
+    "fabric": "*",
+    "minecraft": "~1.19.1",
+    "java": ">=17"
+  }
+}
